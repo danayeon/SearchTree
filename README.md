@@ -1,4 +1,4 @@
-# Overview(概要 개)
+# Overview(概要 개요)
 This is a record of learning about search tree.
 探索木についての学習記録
 탐색트리학습기록
