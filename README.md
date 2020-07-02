@@ -8,7 +8,7 @@ This is a record of learning about search tree.
  - Python
 
 # What's SearchTree?(探索木とは 탐색트리 대해)
-```:wikipedia
+`
 In computer science, a search tree is a tree data structure used for locating specific keys from within a set.
 In order for a tree to function as a search tree, the key for each node must be greater than any keys in subtrees on the left, and less than any keys in subtrees on the right.
 
@@ -17,4 +17,4 @@ Various search-tree data structures exist, several of which also allow efficient
 
 Search trees are often used to implement an associative array. The search tree algorithm uses the key from the key-value pair to find a location, and then the application stores the entire key–value pair at that particular location.
 (wikipedia)
-````
+`
