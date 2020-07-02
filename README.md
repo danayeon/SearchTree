@@ -1,7 +1,7 @@
 # Overview(概要 개요)
-<p>This is a record of learning about search tree.</p>
-<p>探索木についての学習記録</p>
-<p>탐색트리학습기록</p>
+This is a record of learning about search tree.
+探索木についての学習記録
+탐색트리학습기록
 
 ### Coding language(開発言語 개발영어)
  - Ruby
