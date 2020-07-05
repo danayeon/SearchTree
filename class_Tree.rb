@@ -1,5 +1,6 @@
 # 二分探索木
 class Tree
+  attr_reader :num, :left, :right
   def initialize(num)
     @num = num
     @left
