@@ -6,15 +6,20 @@ class Tree
     @left
     @right
   end
+
+  def search(num)
+    if num < self.num
+      self.right = Tree.new(num)
+      return self.right
+    elsif num > self.num
+      self.left = Tree.new(num)
+      return self.left
+    else
+      return self
+    end
+  end
 end
 tree = Tree.new(5)
 p tree
 
 num = 4
-def search(num)
-if num < tree.num
-  tree.right = Tree.new(num)
-elsif num > tree.num
-  tree.left = Tree.new(num)
-else
-  return self
