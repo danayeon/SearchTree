@@ -18,3 +18,10 @@ Various search-tree data structures exist, several of which also allow efficient
 Search trees are often used to implement an associative array. The search tree algorithm uses the key from the key-value pair to find a location, and then the application stores the entire key–value pair at that particular location.
 (wikipedia)
 ```
+```
+探索木とは、計算機科学において特定のキーを特定するために使用される木構造である。その木構造が探索木として機能するために、あるノードのキーは、そのノードの左の子ノードのキーよりは常に大きく、逆に右の子ノードのキーよりは常に小さい性質が必要である。
+
+探索木はその木構造が平衡（全ての葉ノードまでの深さがほぼ等しい状態）である場合に、効率的にそのキーを探索できるという利点を持つ。様々な種類の探索木が存在し、その幾つかは常に平衡を保つことによってキーを効率的に挿入・削除することが可能である。
+
+探索木は、連想配列の実装によく用いられる。探索木アルゴリズムはキーと値のペア（キーバリューペア）のキーを用いて位置を特定し、アプリケーションはキーに対応する値をその位置に保管する。
+```
