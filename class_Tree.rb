@@ -11,5 +11,10 @@ tree = Tree.new(5)
 p tree
 
 num = 4
+def search(num)
 if num < tree.num
-  tree
+  tree.right = Tree.new(num)
+elsif num > tree.num
+  tree.left = Tree.new(num)
+else
+  return self
