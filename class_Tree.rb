@@ -8,18 +8,43 @@ class Tree
   end
 
   def search(num)
-    if num < self.num
-      self.right = Tree.new(num)
-      return self.right
-    elsif num > self.num
-      self.left = Tree.new(num)
-      return self.left
+    if self
+      Tree.new(num)
     else
-      return self
+      if num < self.num
+        self.right.search(num)
+      elsif num > self.num
+        self.left.search(num)
+      else
+        return self
+      end
     end
   end
 end
-tree = Tree.new(5)
-p tree
+#tree = Tree.new(5)
+#p tree
 
-num = 4
+#p tree.search(gets.to_i)
+menu = ['最初のノードを登録', '数字を入力して検索', '終了']
+while menu
+  puts 'メニューを選択'
+  menu.each_index do |i|
+    puts "#{i}. #{menu[i]}"
+  end
+  choose = gets.to_i
+  if choose == 0
+    $tree = Tree.new(gets.to_i)
+  elsif choose == 1
+    if $tree
+      p $tree
+      tree = $tree.search(gets.to_i)
+      p tree
+      puts "左：#{tree.left}"
+      puts "右：#{tree.right}"
+    else
+      puts 'ノードが存在しません'
+    end
+  elsif choose == 2
+    exit
+  end
+end
